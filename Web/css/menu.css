@@ -1,0 +1,107 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../imagenes/bg_menu3.png);
+    color: #000;
+    font-family: sans-serif;
+}
+
+.header{
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(79,154,79,1) 50%, rgba(0,0,0,1) 100%);
+    color: white;
+    height: 100px;
+    text-align: center;
+    position: relative;
+    font-weight: 1000;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header img{
+    float: left;
+    position: absolute;
+    margin-left: -650px;
+    margin-top: -25px;
+}
+.header h2{
+    font-size: 60px;
+    letter-spacing: 70px;
+    padding-left: 62px;
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 1700px;
+    margin: 50px auto;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,auto);
+}
+
+.opciones{
+    height: 350px;
+    width: 800px;
+    border-radius: 4px;
+    font: bold;
+    font-size: 50px;
+    border: 5px double black;
+    color: #fff;
+    transition: 0.5s;
+}
+.opciones h3{
+    border-bottom: 3px solid lightgreen;
+    width: 350px;
+    text-align: center;
+    text-shadow: 0px 3px 3px black;
+
+}
+.opciones:hover{
+    border: 5px solid rgba(95, 95, 95, 0.7);
+    border-left: 20px solid lightgreen;
+    transition: 0.5s;
+}
+
+#op1{
+    background-image: url(../imagenes/plato3.png);
+    background-position: center;
+    transition: 0.5s;
+}
+.opciones p{
+    display: none;
+    transition: 0.5s;
+    background: rgba(95, 95, 95, 0.7);
+    font-size: 20px;
+    height: 280px;
+    padding-top: 15px;
+    padding-left: 50px;
+    padding-right: 60px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    text-align: justify;
+}
+.opciones:hover h3{
+    background: rgba(95, 95, 95, 0.7);
+    width: auto;
+    text-align: left;
+    padding-left: 45px;
+    transition: 0.5s;
+}
+.opciones:hover p{
+    display:block;
+
+}
+#op2{
+    background-image: url(../imagenes/plato2.png);
+}
+#op3{
+    background-image: url(../imagenes/hamburguesa.png);
+}
+#op4{
+    background-image: url(../imagenes/tacos.png);
+}

@@ -1,0 +1,114 @@
+body{
+    margin: 0px;
+    background-image: url(../imagenes/bg_tiendas2.png);
+    background-position: center;
+    background-size: cover;
+    font-family: sans-serif;
+}
+#div_header{
+    height: 100px;
+    background: rgb(100, 100, 100);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#div_header h1{
+    margin-left: 30%;
+    font-size: 45px;
+    font-weight: 1000;
+    text-shadow: 0px 0px 5px  rgb(255, 255, 255);
+    border-bottom: 3px solid black;
+    color: rgb(46, 46, 46);
+}
+#div_login {
+    position: relative;
+    left: 32%;
+    margin-left: 0px;
+}
+#div_login img{
+    height: auto;
+    width: 7%;
+    display: flex;
+    align-items: center;
+}
+#nav_menu{
+	font-family: 'Helvetica';
+	background: #333;
+	width: 100%;
+}
+#menu ul{
+    margin-top: 0;
+	line-height: 50px;
+    padding: 0;
+	list-style: none;
+}
+
+#menu ul li{
+	height: 60px;
+	display: inline-block;
+    margin-left: 0px;
+}
+
+#menu ul li a{
+	display: block;
+	color: white;
+	text-decoration: none;
+    padding: 5px 212.5px;
+    transition: all 400ms
+}
+#menu ul li a:hover{
+    background: rgb(0, 255, 213);
+    color: black;
+
+}
+#slider{
+    overflow: hidden;
+    width: 60%;
+    height: auto;
+    margin-left: 20%;
+    margin-top: 20px;
+    border-style: outset;
+    border-radius: 10px;
+}
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+#slider figure img{
+    width: 20%;
+    float: left;
+}
+@keyframes slider{
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: -400%;
+    }
+}
